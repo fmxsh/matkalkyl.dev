@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Function to traverse directory and print file paths and content
+traverse_and_print() {
+    local dir="$1"
+    
+    # Loop through all files and directories in the given directory
+    for file in "$dir"/*; do
+        if [[ -d "$file" ]]; then
+            # If it's a directory, recursively call the function
+            traverse_and_print "$file"
+        elif [[ -f "$file" ]]; then
+            # If it's a file, print its path and content
+            echo "=== File: $file ==="
+            cat "$file"
+            echo ""
+        fi
+    done
+}
+
+# Starting directory (default is the current directory if no argument is passed)
+start_dir="${1:-.}"
+
+# Call the function with the starting directory
+traverse_and_print "$start_dir"
+
