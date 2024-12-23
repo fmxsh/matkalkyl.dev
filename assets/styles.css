@@ -21,6 +21,8 @@ h1 {
   color: #ca57ff;
   font-weight: 700;
   background: #2d2d2d;
+  text-align: center;
+  border-radius: 3px;
 }
 
 h2 {
