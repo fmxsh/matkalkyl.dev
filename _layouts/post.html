@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Home
 ---
 
 <article>
-  <h1>{{ page.title }}</h1>
-  <p><em>{{ page.date | date: "%B %d, %Y" }}</em></p>
-  <div>{{ content }}</div>
+  <!-- Skip the header and date -->
+  {{ content | split: "\n" | slice: 1, -1 | join: "\n" | markdownify }}
 </article>
 
-<a href="/">Back to Home</a>
+<a href="{{ site.baseurl }}/">Back to Home</a>
