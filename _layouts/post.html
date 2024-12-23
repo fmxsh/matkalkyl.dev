@@ -3,8 +3,7 @@ layout: default
 ---
 
 <article>
-  <!-- Skip the header and date -->
-  {{ content | split: "\n" | slice: 1, -1 | join: "\n" | markdownify }}
+  <div>{{ content }}</div>
 </article>
 
 <a href="{{ site.baseurl }}/">Back to Home</a>
