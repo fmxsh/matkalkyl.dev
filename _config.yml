@@ -1,5 +1,5 @@
 title: "Monthly Newsletter"
 description: "Stay updated with our latest news and updates."
-baseurl: "/matkalkyl.dev" # Leave blank for GitHub Pages
-url: "https://fmxsh.github.io"
+baseurl: "https://matkalkyl.dev" # Leave blank for GitHub Pages
+url: "https://matkalkyl.dev"
 theme: minima
