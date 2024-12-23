@@ -5,7 +5,7 @@ title: Home
 
 # Welcome to matkalkyl.dev
 
-This is the homepage for the site. Below, you'll find links to the newsletters:
+This is the homepage for the site. Below, you’ll find links to the newsletters:
 
 <ul>
   {% for post in site.posts %}

@@ -1,0 +1,5 @@
+title: "Monthly Newsletter"
+description: "Stay updated with our latest news and updates."
+baseurl: "" # Leave blank for GitHub Pages
+url: "https://example.com"
+theme: minima
