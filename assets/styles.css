@@ -5,11 +5,10 @@ body {
   padding: 0;
 }
 
-header,
 footer {
-  background: #f4f4f4;
   padding: 1em;
   text-align: center;
+  border-bottom: 2px dashed #777;
 }
 
 main {
@@ -21,6 +20,7 @@ main {
 h1 {
   color: #ca57ff;
   font-weight: 700;
+  background: #2d2d2d;
 }
 
 h2 {
@@ -59,7 +59,7 @@ li {
 
 a {
   color: #91ffff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
