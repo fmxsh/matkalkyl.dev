@@ -13,12 +13,39 @@ footer {
 }
 
 main {
+  max-width: 700px;
+  margin: 0 auto; /* Centers the content */
   padding: 1em;
 }
 
-h1,
+h1 {
+  color: #ca57ff;
+  font-weight: 700;
+}
+
 h2 {
-  color: #333;
+  color: #57a5ff;
+  font-weight: 600;
+}
+
+h3 {
+  color: #57ffca;
+  font-style: italic;
+}
+
+h4 {
+  color: #add8e6;
+  text-decoration: underline;
+}
+
+h5 {
+  color: #ffd1dc;
+  text-transform: uppercase;
+}
+
+h6 {
+  color: #d1ffd6;
+  font-size: 0.9em;
 }
 
 ul {

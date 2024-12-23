@@ -2,9 +2,85 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css" />
+    <style>
+      #cube-wrap {
+        width: 100px; /* Updated size */
+        height: 100px; /* Updated size */
+        perspective: 500px; /* Adjusted for better view */
+        margin: 0 auto;
+        animation: slideInFromRight 0.3s ease-out;
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+      }
+
+      #cube-wrap .cube {
+        width: 100%; /* Matches #cube-wrap size */
+        height: 100%; /* Matches #cube-wrap size */
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotate 16s infinite linear;
+      }
+
+      #cube-wrap .face {
+        position: absolute;
+        width: 100px; /* Updated size */
+        height: 100px; /* Updated size */
+        border: 1px solid #fff;
+        opacity: 0.8;
+      }
+
+      #cube-wrap .front {
+        background: #ff4136;
+        transform: translateZ(50px); /* Half the new size */
+      }
+
+      #cube-wrap .back {
+        background: #2ecc40;
+        transform: rotateY(180deg) translateZ(50px); /* Half the new size */
+      }
+
+      #cube-wrap .right {
+        background: #0074d9;
+        transform: rotateY(90deg) translateZ(50px); /* Half the new size */
+      }
+
+      #cube-wrap .left {
+        background: #ff851b;
+        transform: rotateY(-90deg) translateZ(50px); /* Half the new size */
+      }
+
+      #cube-wrap .top {
+        background: #b10dc9;
+        transform: rotateX(90deg) translateZ(50px); /* Half the new size */
+      }
+
+      #cube-wrap .bottom {
+        background: #ffdc00;
+        transform: rotateX(-90deg) translateZ(50px); /* Half the new size */
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotateX(0) rotateY(0) rotateZ(0);
+        }
+        100% {
+          transform: rotateX(1turn) rotateY(1turn) rotateZ(1turn);
+        }
+      }
+    </style>
   </head>
   <body>
+    <div id="cube-wrap">
+      <div class="cube">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+      </div>
+    </div>
     <header>
       <nav>
         <a href="/">Home</a>
