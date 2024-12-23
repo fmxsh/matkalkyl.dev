@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to matkalkyl.dev
+# Welcome
 
 This is the homepage for the site. Below, you’ll find links to the newsletters:
 
